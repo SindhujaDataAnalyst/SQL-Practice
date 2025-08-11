@@ -118,6 +118,7 @@ INSERT INTO ecommerce.ecommerce_sales VALUES (97, 9832, 'Jason Baker', 2391, 'Se
 INSERT INTO ecommerce.ecommerce_sales VALUES (98, 8297, 'Christopher Patterson', 2716, 'Us Laptop', 'Books', 359.95, 4, '2024-09-27', 'UPI', 'Delivered', 'West Roberttown');
 INSERT INTO ecommerce.ecommerce_sales VALUES (99, 4773, 'Lori Gomez', 2061, 'Matter Book', 'Toys', 77.85, 1, '2024-03-18', 'Cash on Delivery', 'Delivered', 'Aaronmouth');
 INSERT INTO ecommerce.ecommerce_sales VALUES (100, 8391, 'Mark Harris', 2244, 'Test Book', 'Books', 46.64, 2, '2025-01-01', 'UPI', 'Pending', 'Jessicamouth');	
+
 DESCRIBE ecommerce.ecommerce_sales;
 
 SELECT customer_name, product_name, city
@@ -146,7 +147,9 @@ WHERE order_date >= '2024-02-14';
 
 SELECT * from ecommerce.ecommerce_sales 
 WHERE order_date in('2024-02-11','2024-02-14');  # The IN is a shorthand for OR conditions.
-
+	
+# Filters sales by specific dates, range of dates, or a set of dates using IN.
+	
 SELECT count(*) FROM ecommerce.ecommerce_sales; 
 
 SELECT SUM(price)
@@ -154,20 +157,6 @@ FROM ecommerce.ecommerce_sales;
 
 SELECT SUM(quantity*price) AS Total_sales
 FROM ecommerce.ecommerce_sales;
-
-
--- Finding High Value Customers --
-
-SELECT customer_name 
-FROM ecommerce.ecommerce_sales
-WHERE price >300 
-ORDER BY price DESC 
-LIMIT 1;
-
-SELECT * FROM ecommerce.ecommerce_sales
-WHERE customer_name = 'Andrea Baker'
-
-
 
 
 
