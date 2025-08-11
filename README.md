@@ -1,5 +1,5 @@
-# SQL-Practice
-These repository is having all study materials useful to all
+## SQL-Practice
+The script is intended for learning and practicing SQL fundamentals.
 
 This SQL file contains a collection of sample queries designed to explore and analyze data from an ecommerce_sales table in a database named ecommerce. These queries demonstrate basic SQL operations such as filtering, aggregation, and conditional logic.
 ### The table has fields such as:
