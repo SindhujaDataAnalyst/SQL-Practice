@@ -117,8 +117,7 @@ INSERT INTO ecommerce.ecommerce_sales VALUES (96, 5355, 'Zachary Jones', 2722, '
 INSERT INTO ecommerce.ecommerce_sales VALUES (97, 9832, 'Jason Baker', 2391, 'Several Book', 'Electronics', 110.36, 5, '2024-03-28', 'Cash on Delivery', 'Canceled', 'Kennethfort');
 INSERT INTO ecommerce.ecommerce_sales VALUES (98, 8297, 'Christopher Patterson', 2716, 'Us Laptop', 'Books', 359.95, 4, '2024-09-27', 'UPI', 'Delivered', 'West Roberttown');
 INSERT INTO ecommerce.ecommerce_sales VALUES (99, 4773, 'Lori Gomez', 2061, 'Matter Book', 'Toys', 77.85, 1, '2024-03-18', 'Cash on Delivery', 'Delivered', 'Aaronmouth');
-INSERT INTO ecommerce.ecommerce_sales VALUES (100, 8391, 'Mark Harris', 2244, 'Test Book', 'Books', 46.64, 2, '2025-01-01', 'UPI', 'Pending', 'Jessicamouth');
- 
+INSERT INTO ecommerce.ecommerce_sales VALUES (100, 8391, 'Mark Harris', 2244, 'Test Book', 'Books', 46.64, 2, '2025-01-01', 'UPI', 'Pending', 'Jessicamouth');	
 DESCRIBE ecommerce.ecommerce_sales;
 
 SELECT customer_name, product_name, city
@@ -167,6 +166,7 @@ LIMIT 1;
 
 SELECT * FROM ecommerce.ecommerce_sales
 WHERE customer_name = 'Andrea Baker'
+
 
 
 
